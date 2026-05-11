@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leitura Guiada: De Columbo</title>
+    <style>
+        /* Paleta Clássica / Pergaminho */
+        body {
+            font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+            line-height: 1.8;
+            background-color: #f4f1ea; /* Fundo off-white quente (pergaminho) */
+            color: #3e2723; /* Marrom muito escuro, imitando tinta antiga */
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #fdfbf7; /* Fundo da "folha" ligeiramente mais claro */
+            padding: 45px;
+            border-radius: 4px;
+            box-shadow: 0 4px 15px rgba(62, 39, 35, 0.08);
+        }
+
+        h1 {
+            font-size: 1.8em;
+            color: #5c2a18; /* Terracota / Sangue de boi */
+            border-bottom: 1px solid #d7ccc8;
+            padding-bottom: 15px;
+            margin-bottom: 35px;
+            text-align: center;
+            font-weight: normal;
+        }
+
+        .texto-latim {
+            font-size: 1.5em;
+            margin-bottom: 50px;
+            text-align: justify;
+        }
+
+        /* Estilo para as palavras interativas */
+        .palavra-latim {
+            cursor: pointer;
+            border-bottom: 1px dotted #a1887f; /* Pontilhado mais sutil e quente */
+            padding: 0 2px;
+            transition: all 0.2s ease;
+        }
+
+        .palavra-latim:hover {
+            background-color: #efebe9;
+            color: #5c2a18;
+            border-bottom: 1px solid #5c2a18;
+            border-radius: 3px;
+        }
+
+        /* Reprodução do sublinhado vermelho da imagem */
+        .destaque-vermelho {
+            text-decoration: underline;
+            text-decoration-color: #c0392b; /* Vermelho clássico, menos chamativo */
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
+            border-bottom: none;
+        }
+
+        /* Painel inferior de tradução */
+        #painel-traducao {
+            padding: 25px;
+            background-color: #efebe9;
+            border-left: 5px solid #8d6e63; /* Borda sépia escuro */
+            border-radius: 4px;
+            min-height: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .traducao-contextual {
+            font-size: 1.6em;
+            color: #3e2723;
+            font-weight: bold;
+        }
+
+        .info-morfologica {
+            font-size: 1.05em;
+            color: #5d4037;
+            margin-top: 10px;
+            border-top: 1px solid #d7ccc8;
+            padding-top: 10px;
+        }
+
+        .lema-destaque {
+            color: #8b5a2b; /* Ocre/Dourado escuro para o lema */
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <h1>Texto de Estudo: Colúmbus</h1>
+        
+        <div class="texto-latim">
+            <p>
+                <span class="palavra-latim" data-trad="Colombo" data-lema="Colūmbus, -ī" data-classe="subst. próprio">Colúmbus</span> 
+                <span class="palavra-latim" data-trad="foi" data-lema="sum, esse, fuī" data-classe="verbo">fuit</span> 
+                <span class="palavra-latim" data-trad="um marinheiro" data-lema="nauta, -ae" data-classe="subst. masc.">nauta</span>. 
+                <span class="palavra-latim destaque-vermelho" data-trad="Mas" data-lema="sed" data-classe="conjunção">Sed</span> 
+                <span class="palavra-latim" data-trad="Colombo" data-lema="Colūmbus, -ī" data-classe="subst. próprio">Columbus</span> 
+                <span class="palavra-latim" data-trad="não" data-lema="nōn" data-classe="advérbio">non</span> 
+                <span class="palavra-latim" data-trad="tinha" data-lema="habeō, habēre, habuī" data-classe="verbo">hábuit</span> 
+                <span class="palavra-latim destaque-vermelho" data-trad="um navio" data-lema="nāvis, -is" data-classe="subst. fem.">navem</span>.
+                <span class="palavra-latim" data-trad="Colombo" data-lema="Colūmbus, -ī" data-classe="subst. próprio">Colúmbus</span> 
+                <span class="palavra-latim" data-trad="foi" data-lema="veniō, venīre, vēnī" data-classe="verbo">venit</span> 
+                <span class="palavra-latim" data-trad="até" data-lema="ad" data-classe="preposição">ad</span> 
+                <span class="palavra-latim" data-trad="a Rainha" data-lema="rēgīna, -ae" data-classe="subst. fem.">Regínam</span> 
+                <span class="palavra-latim" data-trad="Isabel" data-lema="Isābella, -ae" data-classe="subst. próprio">Isabéllam</span>. 
+                <span class="palavra-latim" data-trad="Colombo" data-lema="Colūmbus, -ī" data-classe="subst. próprio">Colúmbus</span> 
+                <span class="palavra-latim" data-trad="disse" data-lema="dīcō, dīcere, dīxī" data-classe="verbo">dixit</span>: 
+                <span class="palavra-latim" data-trad="O mundo" data-lema="mundus, -ī" data-classe="subst. masc.">Mundus</span> 
+                <span class="palavra-latim" data-trad="é" data-lema="sum, esse, fuī" data-classe="verbo">est</span> 
+                <span class="palavra-latim destaque-vermelho" data-trad="redondo" data-lema="rotundus, -a, -um" data-classe="adjetivo">rotúndus</span>. 
+                <span class="palavra-latim" data-trad="O mundo" data-lema="mundus, -ī" data-classe="subst. masc.">Mundus</span> 
+                <span class="palavra-latim" data-trad="não" data-lema="nōn" data-classe="advérbio">non</span> 
+                <span class="palavra-latim" data-trad="é" data-lema="sum, esse, fuī" data-classe="verbo">est</span> 
+                <span class="palavra-latim destaque-vermelho" data-trad="plano" data-lema="plānus, -a, -um" data-classe="adjetivo">planus</span>. 
+                <span class="palavra-latim" data-trad="A Rainha" data-lema="rēgīna, -ae" data-classe="subst. fem.">Regína</span> 
+                <span class="palavra-latim" data-trad="deu" data-lema="dō, dare, dedī" data-classe="verbo">dedit</span> 
+                <span class="palavra-latim" data-trad="dinheiro" data-lema="pecūnia, -ae" data-classe="subst. fem.">pecúniam</span>. 
+                <span class="palavra-latim" data-trad="Colombo" data-lema="Colūmbus, -ī" data-classe="subst. próprio">Colúmbus</span> 
+                <span class="palavra-latim" data-trad="não" data-lema="nōn" data-classe="advérbio">non</span> 
+                <span class="palavra-latim" data-trad="encontrou" data-lema="inveniō, invenīre, invēnī" data-classe="verbo">invénit</span> 
+                <span class="palavra-latim" data-trad="a Índia" data-lema="India, -ae" data-classe="subst. próprio">Índiam</span>. 
+                <span class="palavra-latim" data-trad="Colombo" data-lema="Colūmbus, -ī" data-classe="subst. próprio">Colúmbus</span> 
+                <span class="palavra-latim" data-trad="encontrou" data-lema="inveniō, invenīre, invēnī" data-classe="verbo">invénit</span> 
+                <span class="palavra-latim" data-trad="a América" data-lema="Amērica, -ae" data-classe="subst. próprio">Américam</span>. 
+                <span class="palavra-latim" data-trad="A América" data-lema="Amērica, -ae" data-classe="subst. próprio">América</span> 
+                <span class="palavra-latim" data-trad="não" data-lema="nōn" data-classe="advérbio">non</span> 
+                <span class="palavra-latim" data-trad="foi / era" data-lema="sum, esse, fuī" data-classe="verbo">fuit</span> 
+                <span class="palavra-latim" data-trad="pequena" data-lema="parvus, -a, -um" data-classe="adjetivo">parva</span>.
+            </p>
+        </div>
+
+        <div id="painel-traducao">
+            <span style="color: #a1887f; font-style: italic;">Clique numa palavra no texto acima para revelar a tradução no contexto e a sua morfologia.</span>
+        </div>
+    </main>
+
+    <script>
+        const palavras = document.querySelectorAll('.palavra-latim');
+        const painelTraducao = document.getElementById('painel-traducao');
+
+        palavras.forEach(palavra => {
+            palavra.addEventListener('click', function() {
+                const traducao = this.getAttribute('data-trad');
+                const lema = this.getAttribute('data-lema');
+                const classe = this.getAttribute('data-classe');
+                
+                painelTraducao.innerHTML = `
+                    <div class="traducao-contextual">${traducao}</div>
+                    <div class="info-morfologica">
+                        Lema: <span class="lema-destaque">${lema}</span> (${classe})
+                    </div>
+                `;
+            });
+        });
+    </script>
+</body>
+</html>
